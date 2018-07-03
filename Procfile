@@ -1,0 +1,1 @@
+bot-x-music: python "bot-x-music.py"
