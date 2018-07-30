@@ -1,1 +1,1 @@
-bot-x-music: python "bot-x-music.py"
+worker: python run.py
