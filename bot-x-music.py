@@ -10,11 +10,11 @@ COR = 0xF7FE2E
 async def on_ready():
     print(client.user.name)
     print("===================")
-    await client.change_presence(game=discord.Game(name="0/32 Players Online no SupremeCS! IP: [insira IP aqui!]", url="https://twitch.tv/SupremeCSstreaming", type=1))
+    await client.change_presence(game=discord.Game(name="Sou o Bot Suporte do SupremeCS! Site: www.SupremeCS.net", url="https://twitch.tv/SupremeCSstreaming", type=1))
 
 @client.event
 async def on_member_join(member):
-  msg = "Olá, Bem-vindo ao ```SᴜᴘʀᴇᴍᴇCS.ɴᴇᴛ ★ Sᴜᴘᴘᴏʀᴛ Sᴇʀᴠᴇʀ```\nAdicione nossos servidores nos favoritos!\n\n```[4FUN]: insira IP aqui!\n[CS:GO MOD]: insira IP aqui!```\nVisite também nosso site: ```www.SupremeCS.net```\n\nCaso tem algum amigo que também joga no SupremeCS que deseja convidar ao servidor, use este link: https://discord.gg/cPbychK"
+  msg = "Olá, Bem-vindo ao ```SᴜᴘʀᴇᴍᴇCS.ɴᴇᴛ ★ Sᴜᴘᴘᴏʀᴛ Sᴇʀᴠᴇʀ```\nAdicione nossos servidores nos favoritos!\n\n```[4FUN]: 185.50.105.217:27206\n[CS:GO MOD]: 185.50.105.217:27202```\nVisite também nosso site: ```www.SupremeCS.net```\n\nCaso tem algum amigo que também joga no SupremeCS que deseja convidar ao servidor, use este link: https://aqui.vip/discord\n\nhttps://aqui.vip/banner01"
   await client.send_message(member, msg)
   role = discord.utils.get(member.server.roles, name='★ Supreme Member ★')
   await client.add_roles(member, role)
